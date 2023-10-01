@@ -98,4 +98,70 @@ function alertnum() {
     
     
   }
+  function alertloop() {
+  
+    for(let i=0;i<=5;i++){
+      alert(i);
 
+    }
+    
+  }
+  let numalert=[];
+  function pushloop() {
+  
+    for(let i=0;i<=5;i++){
+    numalert.push(i);
+
+    }
+    alert(numalert);
+  }
+  let multiples=[];
+  function multiples3() {
+  
+    for(let i=1;i<=20;i++){
+      if(i%3==0){
+      multiples.push(i);
+      
+    }
+    }
+    alert(multiples);
+  }
+  function numberinput() {
+   let put= prompt("input number ",); 
+    while(parseInt(put) > 100){
+      put= prompt("error number try again  ",); 
+
+    }
+    alert(put);
+   
+  }
+  function numbernan() {
+    let put= prompt("input number ",); 
+     while(isNaN(put)==true || parseInt(put)>100){
+       put= prompt("error number try again  ",); 
+ 
+     }
+     alert(put);
+    
+   }
+var sum=0;
+   function numsum() {
+    let put= prompt("input number ",); 
+     for(i=0;i<=parseInt(put);i++){
+      sum+= i;
+
+     }
+     
+     alert(sum);
+    sum=0;
+   }
+   function average() {
+    let put= prompt("input number ",); 
+     for(i=0;i<=parseInt(put);i++){
+      sum+= i;
+
+     }
+     
+     alert(sum/i);
+    sum=0;
+   }
